@@ -74,3 +74,11 @@ a {
     transition: color 0.3s ease;
 }
 
+pre code {
+    background-color: #555;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
