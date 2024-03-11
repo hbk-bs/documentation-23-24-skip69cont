@@ -63,6 +63,10 @@ h2 {
     font-family: 'Courier New', monospace; 
 }
 
+h3 {
+    color:yellow;
+    font-family: 'Courier New', monospace; 
+}
 p {
     color: #fff;
     font-family: 'Courier New', monospace; 
