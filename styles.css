@@ -73,9 +73,14 @@ p {
 }
 
 a {
-    color: #3498db;
+    color: #ea00ff;
     text-decoration: none;
     transition: color 0.3s ease;
+    
+}
+a:hover{
+    
+
 }
 
 pre code {

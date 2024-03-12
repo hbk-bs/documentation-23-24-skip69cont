@@ -8,19 +8,33 @@
     <body>
         <div class="center-wrapper">
             <table>
-                <tr><th colspan=" 2" ><header><h1>Projekt 2</h1></header></th></tr>
+                <tr>
+                    <th colspan=" 2" >
+                        <header>
+                            <h1>
+                                Gruppenprojekt Keyboardhack
+                            </h1>
+                        </header>
+                    </th>
+                </tr>
                 <tr>
                     <td class="inhalt"><section>
-                        <h2>Inhaltsverzeichnis</h2>
+                        <h2>
+                            Inhaltsverzeichnis
+                        </h2>
                         <ul>
-                            <li><a href="index.html">Main Page</a></li>
-                            <li><a href="projekt1.html">Projekt1</a></li>
-                            <li><a href="projekt3.html">Projekt3</a></li>
+                            <li><a href="index.html"><img src="mainpage.png" alt=""></a></li>
+                            
+                            <li><a href="projekt1.html"><img src="rename.png" alt=""></a></li>
+                            
+                            <li><a href="projekt3.html"><img src="bp2.jpg" alt=""></a></li>
                         </ul>
                     </section>
                     </td>
                     <td class="man"> <section>
-                        <h2>Lüftassistent 1.0</h2>
+                        <h2>
+                            Lüftassistent 1.0
+                        </h2>
                         <h3>
                             In einem Gruppenprojekt entwickelten wir den Lüftassistent 1.0. <br>
                             Mit der Platine eines Keyboard als Basis hilft der Lüftassistent einem dabei, im Winter nicht länger als unbedingt nötig die Fenster offen zu lassen. <br>
@@ -32,16 +46,31 @@
 
                         </h3>
                         <img src="platine.jpg" alt="">
-                        
-                        <img src="fenster.jpg" alt="">
                         <h3>	
                             Der Lüftassistent ist in der Lage einen Timer von 5 min. zu starten, sobald die Taste "0" als not pressed erkannt wird. <br>
                             Dieser Fall tritt ein, sobald das Fenster geöffnet, und somit der Kontakt un terbrochen wird. <br>
                             Nach Ablauf des Timer ist das Fenster wieder zu schließen, der Timer wird zurückgesetzt und startet bei erneutem öffnen von vorne. <br>
                             Wir haben den Code in eine Website inegriert, damit es für Jeden zugänglich und auch verwendbar ist. <br>
-                            <a href="https://lueftassistent.netlify.app/"> lueftassistent </a>  
+                           
                         </h3>
+                        <a href="https://lueftassistent.netlify.app/"> lueftassistent </a>  
+                        <img src="fenster.jpg" alt="">
                        
+                        
+                        
+                        <h3>	
+                            Der Code verwendet zwei Variablen, counter und timeleft, um die verstrichene Zeit und die Gesamtdauer des Countdowns zu verfolgen. Die Gesamtdauer ist auf 300 Sekunden (5 Minuten) eingestellt.
+                            Es gibt eine Funktion namens convertSeconds(s), die eine Zeit in Sekunden in das Format "MM:SS" (Minuten:Sekunden) umwandelt.
+                            Die Funktion setup() initialisiert den Timer. Sie verwendet noCanvas(), um eine grafische Zeichenfläche zu vermeiden. Der Timer wird im HTML-Dokument durch das Element mit der ID 'timer' dargestellt.
+                            Ein Intervall wird mit setInterval(timeIt, 1000) erstellt, um die Funktion timeIt() alle 1000 Millisekunden (1 Sekunde) aufzurufen. Diese Funktion erhöht den Zähler, aktualisiert den Timer im HTML-Dokument und stoppt das Intervall, wenn die Gesamtdauer erreicht ist.
+                            Insgesamt erstellt der Code also einen einfachen Countdown-Timer, der jede Sekunde aktualisiert wird und nach Ablauf der eingestellten Zeit stoppt.
+                        </h3>
+                        <img src="timer.png" alt="">
+                        <h3>
+                            Da wir uns zuvor nur wenig mit Hardware auseinander gesetzt haben, war dieses Projekt besonders interessant. <br>
+                            Ich habe Gefallen am Löten gefunden, als auch daran, sich mit Schaltkreisen, dem Aufbau von Platinen und der experimentellen Herangehensweise auseinander zu setzen.
+                            Besonders interessant für mich war es zu hinterfragen, wie eigentlich eine Tastatur tatsächlich funktioniert, beziehungsweise wie man ausgehend davon die Komponenten dieser neu kombinieren und nutzen kann.
+                        </h3>
                     </section>
                     </td>
                 </tr>
