@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Main Title</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="center-wrapper">
+            <table>
+                <tr>
+                    <th colspan=" 2" >
+                        <header>
+                            <h1>
+                                Gruppenprojekt Keyboardhack
+                            </h1>
+                        </header>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="inhalt"><section>
+                        <h2>
+                            Inhaltsverzeichnis
+                        </h2>
+                        <ul>
+                            <li><a href="index.html"><img src="/assets/images/mainpage.png" alt=""></a></li>
+                            
+                            <li><a href="projekt1.html"><img src="/assets/images/rename.png" alt=""></a></li>
+                            
+                            <li><a href="projekt3.html"><img src="/assets/images/bp2.jpg" alt=""></a></li>
+                        </ul>
+                    </section>
+                    </td>
+                    <td class="man"> <section>
+                        <h2>
+                            Lüftassistent 1.0
+                        </h2>
+                        <h3>
+                            In einem Gruppenprojekt entwickelten wir den Lüftassistent 1.0. <br>
+                            Mit der Platine eines Keyboard als Basis hilft der Lüftassistent einem dabei, im Winter nicht länger als unbedingt nötig die Fenster offen zu lassen. <br>
+                            Die Idee kam uns, als wir im Ideenfindungsprozess waren und vergaßen das Fenster zu schließen. <br>
+                            Neben der Platine besteht der Haushaltshelfer aus Kabeln, welche mit 2 Kontaktplättchen am Fenster angebracht werden. <br>
+                            Diese schließen die Platine kurz und geben über Usb einen Tasteninput an den Computer weiter. <br>
+                            Die Kabel sind an die Kontakte der Taste "0" gelötet. <br>
+                            Die zugehörige Software mussten wir also ebenfalls durch diese Taste steuern können. <br>
+
+                        </h3>
+                        <img src="/assets/images/platine.jpg" alt="">
+                        <h3>	
+                            Der Lüftassistent ist in der Lage einen Timer von 5 min. zu starten, sobald die Taste "0" als not pressed erkannt wird. <br>
+                            Dieser Fall tritt ein, sobald das Fenster geöffnet, und somit der Kontakt un terbrochen wird. <br>
+                            Nach Ablauf des Timer ist das Fenster wieder zu schließen, der Timer wird zurückgesetzt und startet bei erneutem öffnen von vorne. <br>
+                            Wir haben den Code in eine Website inegriert, damit es für Jeden zugänglich und auch verwendbar ist. <br>
+                           
+                        </h3>
+                        <a href="https://lueftassistent.netlify.app/"> lueftassistent </a>  
+                        <img src="/assets/images/fenster.jpg" alt="">
+                       
+                        
+                        
+                        <h3>	
+                            Der Code verwendet zwei Variablen, counter und timeleft, um die verstrichene Zeit und die Gesamtdauer des Countdowns zu verfolgen. Die Gesamtdauer ist auf 300 Sekunden (5 Minuten) eingestellt.
+                            Es gibt eine Funktion namens convertSeconds(s), die eine Zeit in Sekunden in das Format "MM:SS" (Minuten:Sekunden) umwandelt.
+                            Die Funktion setup() initialisiert den Timer. Sie verwendet noCanvas(), um eine grafische Zeichenfläche zu vermeiden. Der Timer wird im HTML-Dokument durch das Element mit der ID 'timer' dargestellt.
+                            Ein Intervall wird mit setInterval(timeIt, 1000) erstellt, um die Funktion timeIt() alle 1000 Millisekunden (1 Sekunde) aufzurufen. Diese Funktion erhöht den Zähler, aktualisiert den Timer im HTML-Dokument und stoppt das Intervall, wenn die Gesamtdauer erreicht ist.
+                            Insgesamt erstellt der Code also einen einfachen Countdown-Timer, der jede Sekunde aktualisiert wird und nach Ablauf der eingestellten Zeit stoppt.
+                        </h3>
+                        <img src="/assets/images/timer.png" alt="">
+                        <h3>
+                            In diesem CSS-Code werden Stilregeln für das Aussehen von HTML-Elementen festgelegt. Hier ist die Erläuterung im gleichen Stil:
+                            Der Code beginnt mit der Definition von globalen Stilen für den gesamten Dokumenten-Körper (`body`). Die verwendete Schriftart ist Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif (in dieser Reihenfolge, abhängig von deren Verfügbarkeit). Der Standard-Schriftstärke wird als normal festgelegt, und der Seitenrand (margin) wird auf 0 gesetzt, was bedeutet, dass keine zusätzlichen Ränder am Dokumentenrand erscheinen sollen.
+                            Für Absätze (`p`) wird ein Hintergrundfarbeneffekt definiert. Die Hintergrundfarbe ist #eeeded, und es wird festgelegt, dass sie das gesamte Element bedeckt (`background-size: cover`). Der Hintergrund wird von rechts nach links verschoben (`background-position: 100%`), was dazu führen kann, dass der Hintergrund sichtbar wird, wenn der Textinhalt breiter als das Element ist. Die Absätze werden als Inline-Flexbox (`display: inline-flex`) dargestellt und zentriert (`align-items: center; justify-content: center;`). Die Schriftgröße ist auf 100 Pixel (`font-size: 100px`) festgelegt, und der Innenabstand (margin) wird auf 0 gesetzt. Die Höhe und Breite jedes Absatzes beträgt 100%, was bedeutet, dass sie den gesamten verfügbaren Raum innerhalb des übergeordneten Elements einnehmen.
+                            Bilder (`img`) nehmen die volle Breite des verfügbaren Raums ein (`width: 100%`), was sicherstellt, dass sie sich automatisch an die Breite des übergeordneten Elements anpassen.
+                            Zusammenfassend werden mit diesem CSS-Code Schriftarten, Hintergrundfarben und -effekte sowie Größenanpassungen für den Text und Bilder auf der Webseite festgelegt.
+                        </h3>
+                        <img src="/assets/images/lüftassistentcss.png" alt="">
+                        <h3>
+                            Da wir uns zuvor nur wenig mit Hardware auseinander gesetzt haben, war dieses Projekt besonders interessant. <br>
+                            Ich habe Gefallen am Löten gefunden, als auch daran, sich mit Schaltkreisen, dem Aufbau von Platinen und der experimentellen Herangehensweise auseinander zu setzen.
+                            Besonders interessant für mich war es zu hinterfragen, wie eigentlich eine Tastatur tatsächlich funktioniert, beziehungsweise wie man ausgehend davon die Komponenten dieser neu kombinieren und nutzen kann.
+                        </h3>
+                       
+                    </section>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+    </body>
+</html>
